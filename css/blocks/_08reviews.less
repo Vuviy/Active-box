@@ -1,0 +1,98 @@
+//main: ../style.less
+
+.reviews{
+  background-color: #53354a;
+  overflow: hidden;
+  &__slider{
+    overflow: hidden;
+  }
+  &__item{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+     @media (max-width: 656px){
+    display: block;
+    }
+  }
+  &__photo{
+    width: 50%;
+    height: 500px;
+    position: relative;
+     @media (max-width: 656px){
+    display: none;
+    }
+  }
+  &__img{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+  &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 80px;
+    margin-top: 20px;
+    @media (max-width: 656px){
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+      padding: 20px 0;
+      text-align: center;
+    }
+  }
+  &__text{
+    font-family: 'Cardo';
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  &__author{
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+}
+
+.slick-dots{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-bottom: 20px;
+      @media (max-width: 656px){
+        right: 65px;
+      }
+  li{
+    margin: 0 10px 0 10px;
+  }
+  button{
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    opacity: .5;
+    border-radius: 50%;
+    border: none;
+    font-size: 0;
+    color: transparent;
+    cursor: pointer;
+  }
+}
+ .slick-dots .slick-active button{
+    opacity: 1;
+  }

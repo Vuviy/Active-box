@@ -1,0 +1,55 @@
+//main: ../style.less
+
+.footer{
+  &__content{
+    background: #3a3e64;
+    padding: 50px 0;
+    @media (max-width: 576px){
+      padding: 10px;
+    }
+    &-inner{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+   &__item{
+      width: 33%;
+      text-align: center;
+      padding: 0 15px;
+      @media (max-width: 576px){
+        width: 100%;
+        margin-top: 30px;
+      }
+    }
+    &__title{
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 30px;
+      @media (max-width: 576px){
+        margin-bottom: 10px;
+      }
+    }
+    &__text{
+      opacity: 0.5;
+      line-height: 22px;
+      color: #ffffff;
+    }
+  &__copyright{
+    background: #313454;
+    text-align: center;
+    padding: 30px 0;
+    @media (max-width: 576px){
+      padding: 10px 0;
+    }
+  }
+  &-inner{
+    display: flex;
+    flex-direction: column;
+  }
+&__link{
+  color: #fff;
+  }
+}
